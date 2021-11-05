@@ -4,14 +4,14 @@ import { View, TextInput, Text, StyleSheet } from 'react-native';
 
 const App = () => {
 
-  const [text, setText] = useState('1990')
+  const [text, setText] = useState('1998')
   const [edad, setEdad] = useState(0)
   const [nombre, setNombre] = useState('')
   const [usuarios, setUsuarios] = useState([{
 
     "id": 1,
-    "name": "Leanne Graham",
-    "username": "Bret",
+    "name": "Gianca JC",
+    "username": "Gianca",
     "email": "Sincere@april.biz",
     "address": {
         "street": "Kulas Light",
@@ -53,7 +53,7 @@ useEffect(() => {
 
   return (  
     <View style={styles.container}>
-    <TextInput style={{borderColor: 'black',  borderWidth: 2}} 
+    <TextInput style={{borderColor: 'green',  borderWidth: 2}} 
     onChangeText={setText}/>
 
     <Text> Hola {nombre}, tu edad aprox.  es: {edad} {text}</Text>
